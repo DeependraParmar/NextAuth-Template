@@ -1,9 +1,9 @@
 'use client';
-import { signIn, signOut, useSession } from 'next-auth/react'
-import React from 'react'
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 const Appbar = () => {
     const session = useSession();
+    console.log(session);
     return (
         <div className='flex justify-around p-2'>
             <div>Logo here</div>
